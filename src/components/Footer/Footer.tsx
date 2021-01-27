@@ -1,6 +1,9 @@
+import {FooterContainer} from './styles';
+import {GrFacebook, GrTwitter} from 'react-icons/gr';
+
 export default function Footer() {
   return (
-    <footer>
+    <FooterContainer>
       <div>
         <span>Terms and conditions</span>
         <span>Privacy Policy</span>
@@ -8,9 +11,9 @@ export default function Footer() {
       </div>
       <div>
         <span>Follow us</span>
-        <span>Twitter</span>
-        <span>Facebook</span>
+        <GrFacebook />
+        <GrTwitter />
       </div>
-    </footer>
+    </FooterContainer>
   );
 }
