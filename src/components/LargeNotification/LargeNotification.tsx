@@ -1,4 +1,5 @@
 import {Container} from './styles';
+import {GiCancel} from 'react-icons/gi';
 
 export default function LargeNotification() {
   return (
@@ -12,6 +13,9 @@ export default function LargeNotification() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, impedit sint molestias, beatae consectetur suscipit magni animi
           dignissimos consequuntur ipsa maxime tempore necessitatibus quasi asperiores? Praesentium laborum quos minima! Quibusdam.
         </p>
+      </div>
+      <div>
+        <GiCancel />
       </div>
     </Container>
   );
