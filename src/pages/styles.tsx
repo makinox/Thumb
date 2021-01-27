@@ -34,3 +34,11 @@ export const BannerFooter = styled.div`
     width: 70%;
   }
 `;
+
+export const VoteHeader = styled.div`
+  & h2 {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0;
+  }
+`;

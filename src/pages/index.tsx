@@ -1,5 +1,5 @@
 import {FluidContainer, Footer, HeroCard, LargeNotification, Navbar, SubmitInvitation} from '../components';
-import {Banner, BannerFooter} from './styles';
+import {Banner, BannerFooter, VoteHeader} from './styles';
 
 export default function Index() {
   return (
@@ -18,9 +18,9 @@ export default function Index() {
       </Banner>
       <FluidContainer>
         <LargeNotification />
-        <div>
+        <VoteHeader>
           <h2>Votes</h2>
-        </div>
+        </VoteHeader>
         <SubmitInvitation />
         <Footer />
       </FluidContainer>
