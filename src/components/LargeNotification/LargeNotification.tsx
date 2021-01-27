@@ -1,8 +1,10 @@
+import {Container} from './styles';
+
 export default function LargeNotification() {
   return (
-    <article>
+    <Container>
       <div>
-        <h4>Speak out.Be heard.</h4>
+        <h3>Speak out.Be heard.</h3>
         <h4>Be counted</h4>
       </div>
       <div>
@@ -11,6 +13,6 @@ export default function LargeNotification() {
           dignissimos consequuntur ipsa maxime tempore necessitatibus quasi asperiores? Praesentium laborum quos minima! Quibusdam.
         </p>
       </div>
-    </article>
+    </Container>
   );
 }
