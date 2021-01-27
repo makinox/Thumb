@@ -1,6 +1,9 @@
+import {HeaderNav} from './styled';
+import {FaSearch} from 'react-icons/fa';
+
 export default function Navbar() {
   return (
-    <header>
+    <HeaderNav>
       <div>
         <span>Rule of Thumb</span>
       </div>
@@ -8,8 +11,8 @@ export default function Navbar() {
         <span>Past Trials</span>
         <span>How It Works</span>
         <span>Log In / Sign Up</span>
-        <span>S</span>
+        <FaSearch />
       </div>
-    </header>
+    </HeaderNav>
   );
 }
