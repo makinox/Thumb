@@ -1,5 +1,5 @@
 import {FluidContainer, Footer, HeroCard, LargeNotification, Navbar, SubmitInvitation} from '../components';
-import {Banner} from './styles';
+import {Banner, BannerFooter} from './styles';
 
 export default function Index() {
   return (
@@ -8,11 +8,13 @@ export default function Index() {
         <FluidContainer>
           <Navbar />
           <HeroCard />
-          <div>
-            <span>Closing</span>
-            <span>20 days</span>
-          </div>
         </FluidContainer>
+        <BannerFooter>
+          <span>CLOSING IN</span>
+          <span>
+            <strong>22</strong> days
+          </span>
+        </BannerFooter>
       </Banner>
       <FluidContainer>
         <LargeNotification />
