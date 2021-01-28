@@ -42,3 +42,9 @@ export const VoteHeader = styled.div`
     margin: 0;
   }
 `;
+
+export const VoteSection = styled.section`
+  grid-template-columns: minmax(auto, 400px) minmax(auto, 400px);
+  justify-content: space-between;
+  display: grid;
+`;

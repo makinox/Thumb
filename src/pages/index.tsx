@@ -1,5 +1,5 @@
-import {FluidContainer, Footer, HeroCard, LargeNotification, Navbar, SubmitInvitation} from '../components';
-import {Banner, BannerFooter, VoteHeader} from './styles';
+import {FluidContainer, Footer, HeroCard, LargeNotification, Navbar, SubmitInvitation, VoteCard} from '../components';
+import {Banner, BannerFooter, VoteHeader, VoteSection} from './styles';
 
 export default function Index() {
   return (
@@ -21,6 +21,11 @@ export default function Index() {
         <VoteHeader>
           <h2>Votes</h2>
         </VoteHeader>
+        <VoteSection>
+          {[...new Array(4)].map((el, idx) => (
+            <VoteCard key={idx} />
+          ))}
+        </VoteSection>
         <SubmitInvitation />
         <Footer />
       </FluidContainer>
