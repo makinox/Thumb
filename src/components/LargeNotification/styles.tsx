@@ -13,20 +13,22 @@ export const Container = styled.article`
   }
 
   & h3 {
-    color: rgb(83, 83, 83);
     width: max-content;
-    font-size: 20px;
+    color: #333333;
+    font-weight: 500;
+    font-size: 18px;
     margin: 0;
   }
 
   & h4 {
+    color: #333333;
+    font-weight: 600;
     font-size: 30px;
-    color: #000;
     margin: 0;
   }
 
   & p {
-    color: rgb(83, 83, 83);
+    color: #333333;
     font-size: 15px;
   }
 `;

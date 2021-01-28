@@ -1,5 +1,6 @@
+import {AiFillDislike, AiFillLike} from 'react-icons/ai';
 import {VoteBadge} from '..';
-import {CardContainer, CardDescription, CardHeader, CardSubtitles, CardWrapper} from './styled';
+import {CardContainer, CardDescription, CardHeader, CardSubtitles, CardWrapper, CardVotes, CardFooter} from './styled';
 
 export default function VoteCard() {
   return (
@@ -18,15 +19,21 @@ export default function VoteCard() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consectetur nemo quibusdam ipsa voluptatibus quasi voluptatum
           </p>
         </CardDescription>
-        <div>
-          <span>Like</span>
-          <span>Dislike</span>
-          <span>Vote now</span>
-        </div>
-        <div>
-          <span>60%</span>
-          <span>40%</span>
-        </div>
+        <CardVotes>
+          <VoteBadge type="like" />
+          <VoteBadge type="dislike" />
+          <VoteBadge type="now" />
+        </CardVotes>
+        <CardFooter like={60} dislike={40}>
+          <div>
+            <AiFillLike />
+            <span>60%</span>
+          </div>
+          <div>
+            <span>40%</span>
+            <AiFillDislike />
+          </div>
+        </CardFooter>
       </CardWrapper>
     </CardContainer>
   );

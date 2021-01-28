@@ -1,5 +1,5 @@
 import {AiFillDislike, AiFillLike} from 'react-icons/ai';
-import {VoteGreen, VoteYellow} from './styles';
+import {VoteBlock, VoteGreen, VoteYellow} from './styles';
 
 export default function VoteBadge({type}: {type: 'like' | 'dislike' | 'now' | 'again'}) {
   switch (type) {
@@ -17,16 +17,16 @@ export default function VoteBadge({type}: {type: 'like' | 'dislike' | 'now' | 'a
       );
     case 'now':
       return (
-        <div>
+        <VoteBlock>
           <span>Vote now</span>
-        </div>
+        </VoteBlock>
       );
 
     case 'again':
       return (
-        <div>
+        <VoteBlock>
           <span>Vote again</span>
-        </div>
+        </VoteBlock>
       );
 
     default:

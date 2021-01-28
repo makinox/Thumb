@@ -1,10 +1,11 @@
 import styled, {css} from 'styled-components';
 
 const defaultBadge = css`
+  display: inline-flex;
   align-items: center;
   margin-right: 5px;
   padding: 5px 4px;
-  display: flex;
+  cursor: pointer;
 `;
 
 export const VoteGreen = styled.div`
@@ -23,4 +24,12 @@ export const VoteYellow = styled.div`
   & svg {
     font-size: 20px;
   }
+`;
+
+export const VoteBlock = styled.div`
+  background-color: transparent;
+  border: 1px solid #fff;
+  display: inline-flex;
+  padding: 8px 15px;
+  cursor: pointer;
 `;

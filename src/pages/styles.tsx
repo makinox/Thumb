@@ -44,7 +44,8 @@ export const VoteHeader = styled.div`
 `;
 
 export const VoteSection = styled.section`
-  grid-template-columns: minmax(auto, 400px) minmax(auto, 400px);
+  grid-template-columns: minmax(auto, 500px) minmax(auto, 500px);
   justify-content: space-between;
+  grid-gap: 40px;
   display: grid;
 `;

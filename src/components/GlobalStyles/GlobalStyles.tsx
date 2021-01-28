@@ -4,7 +4,7 @@ export default createGlobalStyle`
   :root {
     --BackgroundPrimary: #fff;
     --TextPrimary: #000;
-    --TextSecondary: #91aeae;
+    --TextSecondary: #cccccc;
   }
 
   body {

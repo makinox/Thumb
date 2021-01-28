@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {CardFooterI} from './type';
 
 export const CardContainer = styled.article`
   background-image: url('https://picsum.photos/id/1033/400/400');
@@ -6,9 +7,9 @@ export const CardContainer = styled.article`
 `;
 
 export const CardWrapper = styled.div`
-  background-color: rgba(0, 0, 0, 0.6);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 80%, rgba(0, 0, 0, 0.05) 100%);
   padding-top: 30px;
-  margin-top: 120px;
+  margin-top: 200px;
 `;
 
 export const CardHeader = styled.div`
@@ -42,7 +43,38 @@ export const CardDescription = styled.div`
   margin-bottom: 12px;
 
   & p {
+    color: #ccc;
     font-size: 15px;
     margin: 0;
+  }
+`;
+
+export const CardVotes = styled.div`
+  margin: 0 35px;
+  align-items: center;
+  display: flex;
+`;
+
+export const CardFooter = styled.div<CardFooterI>`
+  margin-top: 35px;
+  display: flex;
+
+  & div {
+    align-items: center;
+    font-size: 26px;
+    display: flex;
+  }
+
+  & div:first-of-type {
+    background-color: rgba(91, 185, 180, 0.8);
+    width: ${props => props.like}%;
+    padding: 10px;
+  }
+
+  & div:last-of-type {
+    background-color: rgba(242, 180, 78, 0.8);
+    width: ${props => props.dislike}%;
+    justify-content: flex-end;
+    padding: 10px;
   }
 `;
