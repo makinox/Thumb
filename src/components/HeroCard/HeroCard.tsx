@@ -1,17 +1,18 @@
 import {FaWikipediaW} from 'react-icons/fa';
 import {AiFillDislike, AiFillLike} from 'react-icons/ai';
 import {Container} from './styles';
+import EntityI from '../../utils/interfaces/Entity';
 
-export default function HeroCard() {
+export default function HeroCard({entity}: {entity: EntityI}) {
   return (
     <Container>
       <section>
         <span>What's your opinion on</span>
-        <h2>Pope francis?</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est mollitia at quibusdam iure repellendus,</p>
+        <h2>{entity.name}</h2>
+        <p>{entity.description}</p>
         <div>
           <FaWikipediaW />
-          <a href="https://es.wikipedia.org/">More information</a>
+          <a href={entity.url}>More information</a>
         </div>
         <h5>What's Your Veredict?</h5>
       </section>
