@@ -10,8 +10,8 @@ export default function LargeNotification() {
       </div>
       <div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, impedit sint molestias, beatae consectetur suscipit magni animi
-          dignissimos consequuntur ipsa maxime tempore necessitatibus quasi asperiores? Praesentium laborum quos minima! Quibusdam.
+          Rule of Thumb is a crowd sourced court of public opinion where anyone and everyone can speak out and speak freely. It’s easy:
+          You share your opinion, we analyze and put the data in a public report.
         </p>
       </div>
       <div>

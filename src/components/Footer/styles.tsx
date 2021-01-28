@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const FooterContainer = styled.footer`
   justify-content: space-between;
   border-top: 2px dotted grey;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   padding-top: 20px;
   display: flex;
 

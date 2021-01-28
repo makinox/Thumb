@@ -4,9 +4,15 @@ export const Container = styled.article`
   background-color: rgb(235, 235, 235);
   justify-content: flex-start;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 40px;
   display: flex;
   padding: 20px;
+
+  & svg {
+    color: #333333;
+    cursor: pointer;
+    font-size: 30px;
+  }
 
   & div:nth-child(2) {
     margin: 0 15px;

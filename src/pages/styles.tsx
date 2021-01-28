@@ -36,8 +36,10 @@ export const BannerFooter = styled.div`
 `;
 
 export const VoteHeader = styled.div`
+  margin: 40px 0;
+
   & h2 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 300;
     margin: 0;
   }
