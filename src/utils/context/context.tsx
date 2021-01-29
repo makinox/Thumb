@@ -1,6 +1,5 @@
 import React, {createContext, useState, useEffect} from 'react';
 import EntityI from '../interfaces/Entity';
-import VoteI from '../interfaces/Votes';
 
 const DefaultEntities: Array<EntityI> = [
   {
@@ -52,24 +51,16 @@ const DefaultEntities: Array<EntityI> = [
 ];
 
 export const ARMcontext = createContext({
-  votes: [] as Array<VoteI>,
   entity: [{}] as Array<EntityI>,
-  HandleVotes: (vote: Array<VoteI>) => {},
   HandleEntity: (entity: Array<EntityI>) => {},
 });
 
 export const ARMprovider = ({children}: {children: any}) => {
   const [entity, setEntity] = useState<Array<EntityI>>(DefaultEntities);
-  const [votes, setVotes] = useState<Array<VoteI>>([{}]);
 
   function HandleEntity(param: Array<EntityI>): void {
     setEntity(param);
     localStorage.setItem('entity', JSON.stringify(param));
-  }
-
-  function HandleVotes(param: Array<VoteI>): void {
-    setVotes(param);
-    localStorage.setItem('votes', JSON.stringify(param));
   }
 
   function CheckStorageState(): void {
@@ -88,9 +79,7 @@ export const ARMprovider = ({children}: {children: any}) => {
   return (
     <ARMcontext.Provider
       value={{
-        votes,
         entity,
-        HandleVotes,
         HandleEntity,
       }}>
       {children}
