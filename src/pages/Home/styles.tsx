@@ -50,4 +50,9 @@ export const VoteSection = styled.section`
   justify-content: space-between;
   grid-gap: 40px;
   display: grid;
+
+  @media (max-width: 700px) {
+    grid-template-columns: minmax(auto, 500px);
+    justify-content: center;
+  }
 `;

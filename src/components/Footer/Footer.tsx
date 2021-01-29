@@ -1,13 +1,14 @@
 import {FooterContainer} from './styles';
 import {GrFacebook, GrTwitter} from 'react-icons/gr';
+import {NavLink} from 'react-router-dom';
 
 export default function Footer() {
   return (
     <FooterContainer>
       <div>
-        <span>Terms and conditions</span>
-        <span>Privacy Policy</span>
-        <span>Contact Us</span>
+        <NavLink to="/TermAndConditions">Terms and conditions</NavLink>
+        <NavLink to="/PrivacyPolicy">Privacy Policy</NavLink>
+        <NavLink to="/ContactUs">Contact Us</NavLink>
       </div>
       <div>
         <span>Follow us</span>

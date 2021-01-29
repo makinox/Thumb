@@ -12,7 +12,9 @@ export const FooterContainer = styled.footer`
     display: flex;
   }
 
+  & a,
   & span {
+    text-decoration: none;
     margin-right: 20px;
     cursor: pointer;
     font-size: 14px;

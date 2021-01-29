@@ -8,6 +8,12 @@ export const Container = styled.article`
   display: flex;
   padding: 20px;
 
+  & div:first-of-type {
+    @media (max-width: 630px) {
+      display: none;
+    }
+  }
+
   & svg {
     color: #333333;
     cursor: pointer;

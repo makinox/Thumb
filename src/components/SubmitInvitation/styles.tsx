@@ -23,6 +23,7 @@ export const SubmitContainer = styled.article`
     background-color: rgba(255, 255, 255, 0.1);
     border: 2px solid #000;
     padding: 10px 25px;
+    min-width: 190px;
     font-size: 20px;
     cursor: pointer;
   }

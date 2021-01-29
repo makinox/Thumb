@@ -4,6 +4,8 @@ import {CardFooterI} from './type';
 export const CardContainer = styled.article`
   background-image: url('https://picsum.photos/id/1033/400/400');
   color: var(--BackgroundPrimary);
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
 
 export const CardWrapper = styled.div`
@@ -15,10 +17,11 @@ export const CardWrapper = styled.div`
 export const CardHeader = styled.div`
   justify-content: flex-start;
   align-items: center;
+  margin-right: 30px;
   display: flex;
 
   & h3 {
-    font-size: 33px;
+    font-size: 46px;
     margin: 0;
   }
 `;

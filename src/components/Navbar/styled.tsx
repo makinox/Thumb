@@ -6,6 +6,12 @@ export const HeaderNav = styled.header`
   padding: 30px 0;
   display: flex;
 
+  & div:first-of-type {
+    @media (max-width: 700px) {
+      display: none !important;
+    }
+  }
+
   & svg {
     cursor: pointer;
     color: var(--BackgroundPrimary);
@@ -18,8 +24,9 @@ export const HeaderNav = styled.header`
     font-weight: 500;
   }
 
-  & div:last-of-type span {
+  & div:last-of-type a {
     color: var(--BackgroundPrimary);
+    text-decoration: none;
     margin-left: 50px;
     font-weight: 400;
     cursor: pointer;
