@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {BannerI} from '../components/Navbar/type';
+import {BannerI} from './type';
 
 export const Banner = styled.div<BannerI>`
   background-image: ${props => `url('${props.image}')`};

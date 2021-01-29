@@ -1,7 +1,7 @@
 import {Container} from './styles';
 import {GiCancel} from 'react-icons/gi';
 
-export default function LargeNotification() {
+export default function LargeNotification({HandleAction}: {HandleAction: () => void}) {
   return (
     <Container>
       <div>
@@ -15,7 +15,7 @@ export default function LargeNotification() {
         </p>
       </div>
       <div>
-        <GiCancel />
+        <GiCancel onClick={HandleAction} />
       </div>
     </Container>
   );
