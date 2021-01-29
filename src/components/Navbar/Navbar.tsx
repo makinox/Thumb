@@ -4,7 +4,7 @@ import {NavLink} from 'react-router-dom';
 
 export default function Navbar() {
   return (
-    <HeaderNav>
+    <HeaderNav data-cy="navbar">
       <div>
         <span>Rule of Thumb</span>
       </div>

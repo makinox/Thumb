@@ -4,7 +4,7 @@ import {NavLink} from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <FooterContainer>
+    <FooterContainer data-cy="footer">
       <div>
         <NavLink to="/TermAndConditions">Terms and conditions</NavLink>
         <NavLink to="/PrivacyPolicy">Privacy Policy</NavLink>

@@ -4,8 +4,12 @@ const defaultBadge = css`
   display: inline-flex;
   align-items: center;
   margin-right: 5px;
-  padding: 5px 4px;
+  padding: 5px 5px;
   cursor: pointer;
+
+  &:active {
+    border: #fff solid 2px;
+  }
 `;
 
 export const VoteGreen = styled.div`

@@ -11,14 +11,20 @@ export const CardContainer = styled.article`
 export const CardWrapper = styled.div`
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 80%, rgba(0, 0, 0, 0.05) 100%);
   padding-top: 30px;
-  margin-top: 200px;
+  margin-top: 180px;
 `;
 
 export const CardHeader = styled.div`
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-end;
   margin-right: 30px;
+  height: 110px;
   display: flex;
+
+  & div {
+    margin-right: 4px;
+    margin-bottom: 5px;
+  }
 
   & h3 {
     font-size: 46px;
