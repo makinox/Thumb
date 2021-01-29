@@ -42,7 +42,7 @@ export default function Index() {
         <VoteHeader>
           <h2>Votes</h2>
         </VoteHeader>
-        <VoteSection>
+        <VoteSection data-cy="vote-section">
           {entity.map((el, idx) => {
             if (idx === 0) {
               return <Fragment key={idx} />;

@@ -5,26 +5,26 @@ export default function VoteBadge({type, onClick}: {type: 'like' | 'dislike' | '
   switch (type) {
     case 'like':
       return (
-        <VoteGreen onClick={onClick}>
+        <VoteGreen data-cy="vote-badge-like" onClick={onClick}>
           <AiFillLike />
         </VoteGreen>
       );
     case 'dislike':
       return (
-        <VoteYellow onClick={onClick}>
+        <VoteYellow data-cy="vote-badge-dislike" onClick={onClick}>
           <AiFillDislike />
         </VoteYellow>
       );
     case 'now':
       return (
-        <VoteBlock onClick={onClick}>
+        <VoteBlock data-cy="vote-badge-now" onClick={onClick}>
           <span>Vote now</span>
         </VoteBlock>
       );
 
     case 'again':
       return (
-        <VoteBlock onClick={onClick}>
+        <VoteBlock data-cy="vote-badge-again" onClick={onClick}>
           <span>Vote again</span>
         </VoteBlock>
       );

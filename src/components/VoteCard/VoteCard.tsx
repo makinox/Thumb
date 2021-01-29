@@ -54,7 +54,7 @@ export default function VoteCard({entity, HandleCase}: {entity: EntityI; HandleC
         <CardDescription>
           <p>{entity.description}</p>
         </CardDescription>
-        <CardVotes>
+        <CardVotes data-cy="vote-card-votes">
           {voted ? (
             <VoteBadge type="again" onClick={() => VoteAgain(false)} />
           ) : (
@@ -77,7 +77,7 @@ export default function VoteCard({entity, HandleCase}: {entity: EntityI; HandleC
             </>
           )}
         </CardVotes>
-        <CardFooter like={likes > 0 ? likes : 20} dislike={dislikes > 0 ? dislikes : 20}>
+        <CardFooter like={likes > 0 ? likes : 20} dislike={dislikes > 0 ? dislikes : 20} data-cy="vote-card-footer">
           <div>
             <AiFillLike />
             <span>{likes}%</span>
