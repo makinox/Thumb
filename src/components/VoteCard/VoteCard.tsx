@@ -44,7 +44,9 @@ export default function VoteCard({entity, HandleCase}: {entity: EntityI; HandleC
     <CardContainer>
       <CardWrapper>
         <CardHeader>
-          <div>{true ? <VoteBadge type="like" /> : <VoteBadge type="like" />}</div>
+          <div>
+            {likes === dislikes ? <VoteBadge type="like" /> : likes > dislikes ? <VoteBadge type="like" /> : <VoteBadge type="dislike" />}
+          </div>
           <h3>{entity.name}</h3>
         </CardHeader>
         <CardSubtitles>

@@ -23,6 +23,13 @@ export default function Index() {
     HandleEntity(mutedEntity);
   }
 
+  function HandleInvitation() {
+    const response = window.prompt('Request some one');
+    if (response) {
+      document.title = `Thumb - ${response}`;
+    }
+  }
+
   return (
     <>
       <Banner image="https://picsum.photos/id/1033/1460/700">
@@ -51,7 +58,7 @@ export default function Index() {
             }
           })}
         </VoteSection>
-        <SubmitInvitation />
+        <SubmitInvitation HandleClick={HandleInvitation} />
         <Footer />
       </FluidContainer>
     </>
