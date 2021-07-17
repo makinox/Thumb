@@ -2,6 +2,7 @@ import VoteI from '../../utils/interfaces/Votes';
 import EntityI from '../../utils/interfaces/Entity';
 import {useContext, Fragment, useState} from 'react';
 import {ARMcontext} from '../../utils/context/context';
+import bannerImage from '../../assets/001.jpg';
 import {Banner, BannerFooter, VoteHeader, VoteSection} from './styles';
 import {FluidContainer, Footer, HeroCard, LargeNotification, Navbar, SubmitInvitation, VoteCard} from '../../components';
 
@@ -32,7 +33,7 @@ export default function Index() {
 
   return (
     <>
-      <Banner image="https://picsum.photos/id/1033/1460/700">
+      <Banner image={bannerImage}>
         <FluidContainer>
           <Navbar />
           <HeroCard entity={entity[0]} />

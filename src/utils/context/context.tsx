@@ -1,5 +1,9 @@
-import React, {createContext, useState, useEffect} from 'react';
+import {createContext, useState, useEffect} from 'react';
 import EntityI from '../interfaces/Entity';
+import img002 from '../../assets/002.jpg';
+import img003 from '../../assets/003.jpg';
+import img004 from '../../assets/004.jpg';
+import img005 from '../../assets/005.jpg';
 
 const DefaultEntities: Array<EntityI> = [
   {
@@ -10,6 +14,7 @@ const DefaultEntities: Array<EntityI> = [
     time: '1 month ago',
     category: 'Religion',
     url: 'https://wikipedia.org/',
+    image: '../../assets/001.jpg',
     votes: [],
   },
   {
@@ -19,6 +24,7 @@ const DefaultEntities: Array<EntityI> = [
     time: '1 month ago',
     category: 'Entertainment',
     url: 'https://wikipedia.org/',
+    image: img002,
     votes: [],
   },
   {
@@ -28,6 +34,7 @@ const DefaultEntities: Array<EntityI> = [
     time: '1 month ago',
     category: 'Business',
     url: 'https://wikipedia.org/',
+    image: img003,
     votes: [],
   },
   {
@@ -37,6 +44,7 @@ const DefaultEntities: Array<EntityI> = [
     time: '1 month ago',
     category: 'Business',
     url: 'https://wikipedia.org/',
+    image: img004,
     votes: [],
   },
   {
@@ -46,6 +54,7 @@ const DefaultEntities: Array<EntityI> = [
     time: '1 month ago',
     category: 'Business',
     url: 'https://wikipedia.org/',
+    image: img005,
     votes: [],
   },
 ];

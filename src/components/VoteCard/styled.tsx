@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import {CardFooterI} from './type';
 
-export const CardContainer = styled.article`
-  background-image: url('https://picsum.photos/id/1033/400/400');
+export const CardContainer = styled.article<{image?: string}>`
+  background-image: ${props => (props.image ? `url(${props.image})` : `url('https://picsum.photos/id/1033/400/400')`)};
   color: var(--BackgroundPrimary);
   background-repeat: no-repeat;
   background-size: cover;

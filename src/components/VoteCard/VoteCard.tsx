@@ -41,7 +41,8 @@ export default function VoteCard({entity, HandleCase}: {entity: EntityI; HandleC
     useVoted(param);
   }
   return (
-    <CardContainer>
+    <CardContainer image={entity.image}>
+      {console.log(entity.image)}
       <CardWrapper>
         <CardHeader>
           <div>

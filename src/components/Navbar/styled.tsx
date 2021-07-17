@@ -6,12 +6,6 @@ export const HeaderNav = styled.header`
   padding: 30px 0;
   display: flex;
 
-  & div:first-of-type {
-    @media (max-width: 700px) {
-      display: none !important;
-    }
-  }
-
   & svg {
     cursor: pointer;
     color: var(--BackgroundPrimary);
